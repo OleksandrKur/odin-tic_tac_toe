@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="tictactoe">
+        <div class="heading-wrapper"><h1>Tic Tac Toe</h1></div>
 
+        <div class="input-wrapper">
+            <div class="input-element">
+                <label for="player1name">Select name for player 1</label>
+                <input type="text" name="player1name" id="player1name" placeholder="Player 1">
+            </div>
+            <div class="input-element">
+                <label for="player2name">Select name for player 2</label>
+                <input type="text" name="player2name" id="player2name" placeholder="Player 2">
+            </div>
+            <div class="input-element">
+                <button id="start-button">Select players</button>
+            </div>
+            
+            
+        </div>
+    
+        <div class="board-wrapper">
+            <div data-coordinates="0,0" class="board-cell"></div>
+            <div data-coordinates="0,1" class="board-cell"></div>
+            <div data-coordinates="0,2" class="board-cell"></div>
+            <div data-coordinates="1,0" class="board-cell"></div>
+            <div data-coordinates="1,1" class="board-cell"></div>
+            <div data-coordinates="1,2" class="board-cell"></div>
+            <div data-coordinates="2,0" class="board-cell"></div>
+            <div data-coordinates="2,1" class="board-cell"></div>
+            <div data-coordinates="2,2" class="board-cell"></div>
+        </div>
+        <div class="result-display">
+            <p class="score-player" id="player1display"></p>
+            <p class="score-player" id="player2display"></p>
+            <p class="score" id="player1score"></p>
+            <p class="score" id="player2score"></p>
+        </div>
+        <div class="summaryDisplay">
+            <p id="summaryText"></p>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

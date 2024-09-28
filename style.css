@@ -1,0 +1,101 @@
+body{
+    background-color:rgb(241, 241, 185);
+    font-family: Fredoka, sans-serif;
+}
+h1{
+    font-size: 64px;
+}
+
+button{
+    background: rgb(218, 71, 71);
+	color: white;
+    padding: 10px 16px;
+	border: none;
+    border-radius: 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type="text"]{
+    padding: 12px 6px;
+    border: 1px rgb(218, 218, 218) solid;
+    border-radius: 8px;
+    font-size: 16px;
+    font: inherit;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.input-element{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.input-element:last-child{
+    margin-bottom: 0;
+}
+.tictactoe{
+    max-width: 900px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+.heading-wrapper{
+    grid-column: span 2;
+    text-align: center;
+}
+.result-display{
+    padding: 20px 0;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 60px;
+    text-align: center;
+}
+.result-display>p{
+    margin: 0px;
+}
+.board-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.board-cell{
+    background-color: rgb(245, 191, 178);
+    border: 1px rgb(26, 26, 26) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-family:  sans-serif;
+}
+
+.score-player{
+    font-size: 32px;
+    font-weight: bold;
+}
+.score{
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.summaryDisplay{
+    grid-column: span 2;
+}
+#summaryText{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(103, 21, 196);
+}
